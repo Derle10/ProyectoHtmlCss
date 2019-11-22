@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav>
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a href="#" class="prueba desaparece">Hombre</a>
+        <a href="#" class="prueba desaparece">Mujer</a>
+        <a href="#" class="prueba desaparece">Niño</a>
+        <a href="#" class="prueba desaparece">Otro</a>
+    </nav>
+    <script>
+        function accion(){
+            console.log("acaba de presionar el boton")
+            var link = document.getElementsByClassName('prueba');
+            for(var i=0; i < link.length; i++){
+                link[i].classList.toggle('desaparece');
+            }
+        }
+    </script> 
+</body>
+</html>
