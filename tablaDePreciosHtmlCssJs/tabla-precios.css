@@ -1,0 +1,46 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-weight: 400;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    margin: 0px auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: lightslategray;
+    color: #333;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightslategray;
+
+}
+.precio{
+    font-size: 50px;
+    color: aqua;
+}
+.btn-precio{
+    background: salmon;
+    display: block;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-precio:hover{
+    background: rgb(241, 85, 85);
+}
