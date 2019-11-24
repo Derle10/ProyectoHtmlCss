@@ -1,0 +1,53 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: cornflowerblue;
+}
+    .header{
+        background: black;
+    }
+        .menu{
+            background: lightcoral;
+        }
+            .logo{
+                background: lightpink;
+            }
+            .nav{
+                background: lightpink;
+            }
+            .social{
+                background: lightpink;
+            }
+        .texto-principal{
+            background: lightseagreen;
+        }
+            h1{
+                background: lightgreen;
+            }
+
+    .section{
+        background: black;
+    }
+        .articulos{
+            background: darkblue;
+        }
+            .article{
+                background: lightyellow;
+            }
+            .navegacion{
+                background: darkturquoise;
+            }
+        .aside{
+            background: lightpink;
+        }
+            .publicidad{
+                background: lightgreen;
+            }
+
+    .footer{
+        background: black;
+    }
+        .pie{
+            background: mediumslateblue;
+        }
