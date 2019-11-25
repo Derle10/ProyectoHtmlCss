@@ -2,22 +2,38 @@
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
-    background: cornflowerblue;
+    /* background: cornflowerblue; */
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
 }
     .header{
         background: black;
+        display: flex;
+        flex-flow: column nowrap;
     }
         .menu{
             background: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center;
         }
             .logo{
                 background: lightpink;
+                flex: 1 1 auto;
+                height: 30px;
             }
             .nav{
                 background: lightpink;
+                flex: 5 1 auto;
+                height: 30px;
             }
             .social{
                 background: lightpink;
+                flex: 1 1 auto;
+                height: 30px;
             }
         .texto-principal{
             background: lightseagreen;
@@ -28,18 +44,25 @@
 
     .section{
         background: black;
+        display: flex;
     }
         .articulos{
             background: darkblue;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
         }
             .article{
                 background: lightyellow;
+                flex: 1 1 40%;
             }
             .navegacion{
                 background: darkturquoise;
+                flex: 1 1 100%;
             }
         .aside{
             background: lightpink;
+            flex: 1 1 auto;
         }
             .publicidad{
                 background: lightgreen;
@@ -47,7 +70,33 @@
 
     .footer{
         background: black;
+        display: flex;
+        justify-content: center;
     }
         .pie{
             background: mediumslateblue;
+            width: 300px;
         }
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
